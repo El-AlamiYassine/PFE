@@ -27,7 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
         
         if ($sql->execute()) {
-            echo "Inscription réussie.";
+            header("Location: ./ecommerce/index.html");
+            exit();
         } else {
             echo "Erreur lors de l'inscription : " . $conn->error;
         }

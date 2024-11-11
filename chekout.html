@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Inscription</title>
+  <link rel="stylesheet" href="./css/mian.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="point"></div>
+    <div class="inscription">
+      <div class="title">Checkout</div>
+      <button class="close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="content">
+      <form action="register.php" method="POST">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Contact Name</span>
+            <input type="text" placeholder="Enter votre nom" required name="name">
+          </div>
+          <div class="input-box">
+            <span class="details">Numéro de téléphone</span>
+            <input type="tel" placeholder="Entrez votre numéro" required name="phone">
+          </div>
+          <div class="input-box">
+            <span class="details">Adresse</span>
+            <input type="text" placeholder="Rue">
+            <input type="text" placeholder="Appartement">
+            <input type="text" placeholder="Ville" name="city">
+            <input type="text" placeholder="Code Postal" name="zipcode">
+          </div>
+          <div class="input-box">
+            <span class="details">Paiement</span>
+            <input type="text" placeholder="Ajouter une nouvelle carte" required name="card">
+            <input type="password" placeholder="Mot de passe">
+          </div>
+        </div>
+        <!-- Submit button -->
+        <div class="button">
+          <button type="submit" class="btn">
+            <strong>Acheter</strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <ul>
+      <li><i class="fab fa-facebook"></i></li>
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-instagram"></i></li>
+    </ul>
+  </footer>
+</body>
+</html>
