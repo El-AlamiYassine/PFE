@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Page Inscription</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Title section -->
+    <div class="point"></div>
+    <div class="inscription">
+      <div class="title">Inscription</div>
+      <button class="close"><i class="fa-solid fa-x"></i></button>
+    </div>
+    <div class="content">
+      <!-- Registration form -->
+      <form action="register.php" method="POST">
+        <div class="user-details">
+          <!-- Input for Full Name -->
+          <div class="input-box">
+            <span class="details" >Prénom & Nom </span>
+            <input type="text" placeholder="Enter votre nom" required name="name">
+          </div>
+          <!-- Input for Username -->
+          <div class="input-box">
+            <span class="details">Ville</span>
+            <input type="text" placeholder="Enter votre ville" required name="region">
+          </div>
+          <!-- Input for Email -->
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter votre email" required name="email">
+          </div>
+          <!-- Input for Phone Number -->
+          <div class="input-box">
+            <span class="details">numero de telephon</span>
+            <input type="text" placeholder="Enter votre numero de telephon" required name="phone">
+          </div>
+          <!-- Input for Password -->
+          <div class="input-box">
+            <span class="details">address</span>
+            <input type="text" placeholder="Enter votre adress" required name="address">
+          </div>
+          <!-- Input for Confirm Password -->
+          <div class="input-box">
+            <span class="details">Enter Password</span>
+            <input type="password" placeholder="Enter votre mot de passss" required name="password">
+          </div>
+        </div>
+        <div class="gender-details">
+          <!-- Radio buttons for gender selection -->
+          <input type="radio" name="gender" value="Male" id="dot-1" required>
+          <input type="radio" name="gender" value="Female" id="dot-2">
+          <input type="radio" name="gender" value="Prefer not to say" id="dot-3">
+
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <!-- Label for Male -->
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <!-- Label for Female -->
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            <!-- Label for Prefer not to say -->
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <!-- Submit button -->
+        <button type="submit" class="btn" onclick="">
+          <strong>INSCRIRE</strong>
+          <div id="container-stars">
+            <div id="stars"></div>
+          </div>
+        
+          <div id="glow">
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </button>
+      </form>
+    </div>
+    <footer>
+      <img src="img/LOGO-removebg-preview.png" alt="">
+      <div class="footerstyle"></div>
+    </footer>
+  </div>
+</body>
+
+</html>
